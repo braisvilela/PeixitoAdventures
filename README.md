@@ -1,191 +1,126 @@
 # 🐟 Peixito Adventures
+
+![Versão](https://img.shields.io/badge/versão-3.1-blue) ![HTML5](https://img.shields.io/badge/HTML5-Canvas-orange) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+
+Um jogo de plataforma 2D com exploração submarina infinita, combate com bolhas, poderes combináveis, chefões, pets e progressão de habilidades. Personalize seu peixe, explore diferentes biomas, colete estrelas e supere seu recorde!
+
+## 🎮 Jogue agora
+
+**[▶ Jogar Peixito Adventures gratuitamente](https://braisvilela.github.io/PeixitoAdventures/)**
+
 https://braisvilela.github.io/PeixitoAdventures/
-![Versão](https://img.shields.io/badge/versão-1.8-blue) ![HTML5](https://img.shields.io/badge/HTML5-Canvas-orange) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 
-**Peixito Adventures** é um jogo de plataforma 2D de aventura submarina, com cenário infinito gerado proceduralmente, combate com bolhas, chefões, poderes especiais e uma economia baseada em estrelas. Explore o oceano, personalize seu peixe, derrote inimigos e tente superar seu recorde!
+O jogo funciona diretamente no navegador, sem instalação.
 
-## 🎮 Como jogar
-
-Escolha a aparência do peixe e o modo de controle no menu inicial. Avance pelo cenário, salte entre plataformas, colete estrelas e enfrente monstros. Você começa com três vidas. A partida termina quando as vidas acabam ou quando o peixe cai para fora do cenário.
+## Controles
 
 | Ação | Teclado | Mouse |
 |---|---|---|
-| Movimento | A/D ou ←/→ | Movimento horizontal do mouse |
+| Movimento | A/D ou ←/→ | Movimento horizontal |
 | Pulo | W, ↑ ou Espaço | Clique direito |
-| Pulo duplo | Pressione pulo novamente no ar | Segundo clique direito |
+| Pulo duplo | Pular novamente no ar | Segundo clique direito |
 | Disparo | F | Clique esquerdo |
-| Disparo contínuo | Segure F | Segure clique esquerdo |
+| Disparo contínuo | Segurar F | Segurar clique esquerdo |
+| Descer de plataforma | S ou ↓ | S ou ↓ |
+| Ativar poderes | 1 a 6 | Clicar no inventário com cursor disponível |
 | Pausa e loja | Esc ou botão de pausa | Esc ou botão de pausa |
 
-No modo mouse, a mira permite disparar em 360°, inclusive na diagonal. No teclado, o disparo segue a direção do peixe. Em dispositivos com tela sensível ao toque, são exibidos botões de movimento, pulo e disparo. O jogo também pausa quando a janela perde o foco.
+O modo mouse oferece mira em 360°. Também existem botões de toque para movimento, pulo e disparo em dispositivos compatíveis.
 
-## 🌊 Mundo e exploração
+## 🌊 Exploração e biomas
 
-O cenário é gerado conforme o jogador avança, com câmera que acompanha o personagem e sete padrões de distribuição de plataformas, incluindo escadas ascendentes e descendentes, caminhos horizontais, plataformas isoladas e formações irregulares. Alturas e larguras variam aleatoriamente.
+O mundo é gerado proceduralmente com câmera que acompanha o jogador, caminhos horizontais em alturas diferentes e espaços mais abertos para exploração. Cada região ocupa aproximadamente 10.000 pixels do mundo e os biomas se repetem em sequência.
 
-- **Nuvens de espuma:** plataformas que se comprimem suavemente ao pousar e recuperam o formato ao sair.
-- **Plataformas móveis:** deslocam-se horizontalmente.
-- **Conchas instáveis:** afundam temporariamente após o pouso.
-- **Corais impulsionadores:** lançam o peixe para cima com um impulso extra.
-- **Correntes marítimas:** ajudam a alcançar regiões elevadas.
-- **Corais espinhosos:** causam dano por contato.
-- **Lacunas no terreno:** exigem saltos precisos; cair para fora do cenário encerra a partida.
-
-### Biomas
-
-| Bioma | Características |
+| Bioma | Tema |
 |---|---|
-| Recifes de coral | Corais impulsionadores mais frequentes |
-| Floresta de algas | Plataformas móveis |
-| Ruínas submersas | Conchas instáveis |
-| Cavernas luminosas | Paleta violeta e plataformas de espuma |
-| Mar tropical | Paleta clara e tropical |
-| Abismo cristalino | Correntes marítimas e tons profundos |
+| Mar de nuvens | Plataformas de espuma e tons azulados |
+| Naufrágio perdido | Madeira e plataformas podres |
+| Deserto de areia | Caminhos abertos e plataformas de areia |
+| Ruínas submersas | Estruturas de pedra |
+| Abismo cristalino | Cristais e atmosfera escura |
 
-## 🫧 Poderes especiais
+Nuvens elásticas, corais impulsionadores e madeira quebrável diversificam os caminhos. Explore os andares superiores para encontrar estrelas e inimigos.
 
-Todos os poderes duram **20 segundos de jogo ativo**. O cronômetro congela durante a pausa. Apenas um poder pode ficar ativo por vez; coletar ou comprar outro substitui o anterior.
+## 🫧 Inventário e poderes
 
-| Poder | Efeito |
-|---|---|
-| 🛡️ Invencibilidade | Protege contra danos comuns e elimina monstros normais por contato |
-| 💦 Jato de água | Disparos mais rápidos, com 2 pontos de dano por acerto |
-| 🫧 Bolha capturadora | Captura monstros normais e os faz flutuar; causa 3 pontos de dano aos chefões |
+Poderes comprados ou coletados ficam armazenados. Ative-os quando desejar pelas teclas de 1 a 6 ou pelos ícones da interface. Vários poderes podem permanecer ativos simultaneamente.
 
-A bolha comum causa 1 ponto de dano. Os poderes aparecem pelo mapa, podem ser derrubados por monstros, são disponibilizados nas arenas e podem ser comprados na loja. O nome e a barra de duração do poder aparecem acima do peixe.
+| Tecla | Poder | Efeito | Limite |
+|---|---|---|---|
+| 1 | Invencibilidade | Proteção contra dano | 20 s |
+| 2 | Water Ball | Esfera de água de alto dano | 3 tiros |
+| 3 | Bolha capturadora | Captura inimigos comuns | 20 s |
+| 4 | Bolha teleguiada | Procura alvos próximos | 20 s |
+| 5 | Ice Bubble | Congela inimigos e chefões | 20 s |
+| 6 | Water Cannon | Jato de água com projéteis penetrantes | 20 s |
 
-## ⭐ Estrelas e loja
+A Ice Bubble congela chefões por 3 segundos, com 2 segundos de resistência após o descongelamento. Os disparos já existentes continuam em movimento. Water Ball tem prioridade sobre Water Cannon enquanto houver munição.
 
-Estrelas são a moeda da partida, separada da pontuação. Estrelas douradas valem 1 e estrelas raras rosas valem 5. Corações encontrados no mapa concedem uma vida adicional. Não há conversão automática de 50 estrelas em uma vida.
+## 📈 Progressão e passivas
 
-Pressione Esc para abrir a loja durante a pausa, inclusive durante uma batalha contra um chefão.
+As melhorias automáticas e compradas acumulam durante a partida.
 
-| Item | Preço em estrelas |
-|---|---:|
-| ❤️ Vida adicional | 50 |
-| 🎲 Poder aleatório | 10 |
-| 🛡️ Invencibilidade | 25 |
-| 💦 Jato de água | 25 |
-| 🫧 Bolha capturadora | 25 |
+| Passiva | Progressão automática | Limite |
+|---|---|---|
+| Multi Bubble | 1 bolha inicial; +1 a cada 1.000 pontos | 10 bolhas |
+| Star Magnet | 85 px iniciais; +15 px a cada 500 pontos | 400 px |
+| Mirror Shield | Desbloqueio aos 3.000 pontos; reflete projéteis como bolhas teleguiadas | Uma habilidade |
 
-As compras são descontadas imediatamente do saldo. O saldo e as vidas são reiniciados em uma nova partida.
+## ⭐ Loja de estrelas
 
-## 👾 Monstros
+Abra a pausa para acessar a loja. Estrelas são a moeda da partida.
 
-Os seis tipos de inimigos têm barras de vida individuais e podem aparecer no chão ou em plataformas elevadas.
-
-| Tipo | Vida | Comportamento possível |
+| Item | Preço | Benefício |
 |---|---:|---|
-| Caranguejo | 3 HP | Patrulha ou perseguição |
-| Polvo | 4 HP | Disparos direcionados |
-| Água-viva | 2 HP | Movimento vertical no chão; patrulha ou perseguição |
-| Tubarão | 5 HP | Perseguição |
-| Peixe-balão | 4 HP | Patrulha ou perseguição |
-| Ostra | 5 HP | Disparos direcionados |
+| Star Magnet upgrade | 40 ⭐ iniciais | +25 px; preço aumenta 20 ⭐ por compra |
+| Multi Bubble upgrade | 75 ⭐ iniciais | +1 bolha; preço aumenta 25 ⭐ por compra |
+| Pet coletor | 75 ⭐ | Companheiro que busca estrelas e poderes |
+| Vida adicional | 50 ⭐ | +1 vida |
+| Poder aleatório | 10 ⭐ | Adiciona um poder ao inventário |
+| Poder específico | 25 ⭐ | Adiciona o poder escolhido ao inventário |
 
-Patrulheiros movimentam-se em sua região. Perseguidores detectam o jogador em até 220 pixels e têm deslocamento limitado à região de origem. Atiradores detectam o jogador em até 340 pixels e lançam projéteis em sua direção. Um sinal de exclamação indica alerta nos perseguidores e atiradores. Os inimigos sobre plataformas permanecem dentro de suas bordas.
+Os upgrades e o pet permanecem até o fim da partida.
 
-É possível eliminar monstros com disparos, pulando sobre eles, usando invencibilidade ou capturando-os com bolhas especiais.
+## 🦀 Monstros e chefões
 
-### Drops de monstros
+Nove espécies de inimigos, com aparências e comportamentos variados: caranguejo, polvo, água-viva, tubarão, peixe-balão, ostra, lula, tartaruga e peixe fantasma. Os inimigos exibem nome, coração com vida restante e área de detecção. Seus desenhos acompanham a direção de movimento.
 
-| Recompensa | Probabilidade |
-|---|---:|
-| 1 a 3 estrelas comuns | 50% |
-| Estrela rara (5 estrelas) | 10% |
-| Poder aleatório | 5% |
-| Nenhuma recompensa | 35% |
+Chefões aparecem a cada marco de 1.000 pontos. O primeiro é o Caranguejo Gigante, com 24 pontos de vida, deslocamento lateral, investidas e saltos. Os chefões seguintes utilizam padrões diferentes de projéteis. A arena oferece 10 estrelas e a vitória concede uma recompensa adicional em estrelas. Nome e vida do chefão aparecem junto ao personagem, com posicionamento ajustado para evitar a HUD.
 
-Os itens derrubados possuem gravidade, podem pousar sobre plataformas e são atraídos pelo peixe quando ele se aproxima.
+## 🖥️ Interface e personalização
 
-## 👑 Chefões
+- HUD com vidas, estrelas, pontuação, recorde e bioma atual.
+- Indicadores de alcance do ímã, quantidade de bolhas, Mirror Shield e upgrades.
+- Inventário com quantidade de poderes e duração restante.
+- Dez cores e cinco padrões de peixe: clássico, listrado, pintado, bicolor e multi.
+- Música e efeitos sonoros sintetizados com Web Audio API.
+- Preferências e recorde armazenados localmente no navegador.
 
-Uma batalha começa a cada marco de 1.000 pontos. A câmera fica fixa em uma arena com plataformas para ajudar a desviar dos ataques. Os chefões alternam entre Polvo gigante, Caranguejo gigante e Guardião abissal, com variações de cor e nome e um conjunto compartilhado de ataques.
+## 🛠️ Tecnologias e execução local
 
-- Primeiro chefão: 24 HP; cada novo nível acrescenta 6 HP.
-- Ataques horizontais próximos ao chão, disparos em diferentes alturas e chuva de projéteis verticais.
-- A frequência dos ataques aumenta com o nível, até um limite.
-- Um poder especial é disponibilizado na arena.
-- Cada vitória concede 250 pontos e derruba de 20 a 30 estrelas comuns.
-
-## 🏆 Pontuação e recorde
-
-| Ação | Pontos |
-|---|---:|
-| Avançar 10 unidades além da maior distância alcançada | 1 |
-| Eliminar monstro com disparo ou invencibilidade | 25 |
-| Eliminar monstro pulando sobre ele | 35 |
-| Capturar monstro que sai da tela | 50 |
-| Coletar poder no cenário | 10 |
-| Derrotar chefão | 250 |
-
-Estrelas não acrescentam pontos diretamente. O recorde é salvo localmente no navegador.
-
-## ❤️ Vidas e feedback de dano
-
-O peixe começa com 3 vidas, exibidas no HUD e acima do personagem. Vidas adicionais podem ser compradas ou coletadas. Não há limite máximo de vidas definido no código.
-
-Ao receber dano comum, o jogador perde uma vida e recebe feedback visual e sonoro: peixe avermelhado, tremor breve da câmera, bordas vermelhas, partículas, indicador flutuante −1 ♥ e som de impacto. Há aproximadamente 1,67 segundo de invulnerabilidade após o dano. O poder de invencibilidade impede danos comuns, mas não impede o fim da partida por queda para fora do cenário.
-
-## 🎨 Personalização e áudio
-
-- Dez opções de cor e cinco padrões: Clássico, Listrado, Pintado, Bicolor e Multi.
-- Prévia animada no menu inicial.
-- Preferências de aparência e controle salvas com `localStorage`.
-- Trilha retrô original sintetizada por Web Audio API, com ondas senoidais e triangulares.
-- Música de exploração suave e variação mais rápida durante chefões.
-- Botão de som para ativar ou desativar música e efeitos sonoros.
-
-## 🛠️ Tecnologias
-
-O jogo utiliza HTML5, CSS e JavaScript puro, Canvas 2D para renderização, Web Audio API para áudio, Pointer Lock API para captura do mouse e localStorage para preferências e recorde. A simulação usa passos de 60 Hz e a renderização utiliza `requestAnimationFrame`. A resolução interna é 960 × 540, com proporção responsiva de 16:9.
-
-Não exige bibliotecas externas, instalação de dependências, servidor de jogo ou arquivos de áudio separados.
-
-## 🚀 Executando localmente
-
-1. Baixe o arquivo `index.html`.
-2. Abra-o em um navegador moderno, como Chrome, Edge ou Firefox.
-3. Escolha seu peixe e comece a jogar.
-
-Opcionalmente, execute um servidor local na pasta do projeto:
+HTML5, CSS3, JavaScript, Canvas 2D, Web Audio API e localStorage. O jogo é autocontido em `index.html`, sem dependências externas de execução.
 
 ```bash
-python -m http.server 8000
+git clone https://github.com/braisvilela/PeixitoAdventures.git
+cd PeixitoAdventures
 ```
 
-Acesse `http://localhost:8000`.
+Abra `index.html` no navegador ou sirva a pasta localmente. O projeto é compatível com hospedagem estática, como GitHub Pages.
 
-## 🌐 Publicação no GitHub Pages
+## 📝 Histórico de versões
 
-Coloque `index.html` e `README.md` na raiz de um repositório GitHub. Em **Settings → Pages**, selecione **Deploy from a branch**, escolha a branch `main` (ou a branch utilizada pelo projeto), a pasta `/ (root)` e salve. Após a publicação, o endereço normalmente será `https://USUARIO.github.io/REPOSITORIO/`.
+- **3.1 — Combat & Upgrades:** posição da vida e nome dos chefões, orientação dos monstros e upgrades de ímã e projéteis.
+- **3.0 — Ocean Worlds & Inventory:** inventário de poderes, pet coletor, HUD reorganizada, biomas temáticos e Caranguejo Gigante.
+- **2.1 — Multi-Level World:** caminhos em diferentes alturas e materiais de plataformas.
+- **2.0 — Evolution:** poderes simultâneos, Ice Bubble, Water Cannon, passivas e espécies variadas.
+- **1.x:** plataforma infinita, chefões, personalização, estrelas, loja e poderes básicos.
 
-```text
-peixito-adventures/
-├── index.html    # Jogo completo: HTML, CSS e JavaScript
-└── README.md     # Documentação
-```
+## 🚀 Ideias futuras
 
-## 📋 Histórico de versões
-
-| Versão | Atualização |
-|---|---|
-| 1.2 | World Update: plataformas, exploração e música retrô |
-| 1.3 | RPG Music Update: ajustes nos poderes e trilha |
-| 1.4 | Aim & Music Update: mira em 360° e áudio suave |
-| 1.5 | Stars Update: estrelas, vidas e animação das nuvens |
-| 1.6 | Loot Update: recompensas de monstros e chefões |
-| 1.7 | Shop & World Update: loja, poderes de 20 segundos e variedade de inimigos |
-| 1.8 | Damage Feedback Update: efeitos visuais e sonoros de dano |
-
-## 🔮 Possíveis melhorias futuras
-
-Chefões com aparências e habilidades exclusivas, baús secretos, novas habilidades, conquistas, ranking online e ajustes de acessibilidade e balanceamento. Esses recursos são ideias futuras, não funcionalidades da versão atual.
-
-## 📄 Licença
-
-A licença de distribuição ainda não foi definida nesta documentação. Consulte o responsável pelo projeto antes de redistribuir ou reutilizar o código.
+Chefões exclusivos por bioma, bestiário, monstros de elite, evolução dos pets, baús de tesouro e novas melhorias permanentes durante a partida.
 
 ---
 
-**Explore, salte, dispare bolhas, colete estrelas e conquiste o oceano!**
+**Explore, evolua e bata seu recorde!** 🐟
+
+[🎮 Jogar online](https://braisvilela.github.io/PeixitoAdventures/)
