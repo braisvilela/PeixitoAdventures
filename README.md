@@ -1,5 +1,5 @@
 # 🐟 Peixito Adventures
-
+https://braisvilela.github.io/PeixitoAdventures/
 ![Versão](https://img.shields.io/badge/versão-1.8-blue) ![HTML5](https://img.shields.io/badge/HTML5-Canvas-orange) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 
 **Peixito Adventures** é um jogo de plataforma 2D de aventura submarina, com cenário infinito gerado proceduralmente, combate com bolhas, chefões, poderes especiais e uma economia baseada em estrelas. Explore o oceano, personalize seu peixe, derrote inimigos e tente superar seu recorde!
